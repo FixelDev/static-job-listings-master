@@ -1,0 +1,174 @@
+@import './config.module';
+@import './utilities';
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+html,body, button{
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+button{
+    border:none;
+    outline: none;
+}
+
+header{
+    height: 155px;
+    background: $desaturated-dark-cyan url('/public/images/bg-header-mobile.svg');
+}
+
+main{
+    padding-top: 3.5em;
+}
+
+
+.filter-panel{
+    background-color: #fff;
+    justify-content: space-between;
+    transform-origin: bottom center;
+    margin-top: -2em;
+    width: 100%;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .filters-container {
+        flex-wrap: wrap;
+        gap:1em
+    }
+
+    .clear-filters-btn{
+        background-color: transparent;
+        font-weight: 700;
+        color: $dark-grayish-cyan;
+        transition: 0.3s;
+    }
+
+    .clear-filters-btn:hover{
+        cursor: pointer;
+        color: $desaturated-dark-cyan;
+        text-decoration: underline;
+    }
+}
+
+.filter{
+
+    .filter-name{
+        border-radius: $tag-border-radius 0 0 $tag-border-radius;
+    }
+
+    .remove-tag-btn{
+        background: $desaturated-dark-cyan url('/public/images/icon-remove.svg') center center no-repeat;
+        height: 100%;
+        width: 1.8em;
+        border-radius: 0 $tag-border-radius $tag-border-radius 0;
+        transition: 0.3s;
+    }
+    
+    .remove-tag-btn:hover{
+        cursor: pointer;
+        background-color: $very-dark-grayish-cyan;
+    }
+}
+
+
+.job-card{
+    padding-top: 0;
+    position: relative;
+    margin-bottom: 2.4em;
+    flex-direction: column;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .company-logo{
+        width: 3.2em;
+        transform: translateY(-50%);
+        position:absolute;
+    }
+
+    .job-card-content{
+        border-bottom: 1px solid $dark-grayish-cyan;
+        padding-top: 2.3em;
+        margin-bottom: 1em;
+    }
+
+    .job-card-content-header{
+        align-items: center;
+        flex-wrap: wrap;
+
+        .job-company{
+            font-weight: 700;
+            color: $desaturated-dark-cyan;
+            margin-right: 1.5em;
+        }
+    }
+
+    .job-position{
+        margin: 1em 0;
+        font-weight: 700;
+        transition: 0.3s;
+    }
+
+    .job-position:hover{
+        cursor: pointer;
+        color: $desaturated-dark-cyan;
+    }
+
+    .job-card-info{
+        margin-bottom: 1em;
+        color: $dark-grayish-cyan;
+
+        .job-card-info-element{
+            margin-right: 1.7em;
+            text-align: center;
+            white-space: nowrap
+        }
+
+        .job-card-info-element:first-of-type{
+            list-style: none;
+        }
+    }
+
+    .job-card-tags{
+        flex-wrap: wrap;
+        gap: 1em;
+        padding-right: 2em;
+    }
+
+    .tag:hover{
+        cursor: pointer;
+        background-color: $desaturated-dark-cyan;
+        color: #fff;
+    }
+}
+
+.badge{
+    color: #fff;
+    padding: 0.4em 0.5em 0.3em 0.6em;
+    border-radius: 5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-items: center;
+    margin-right: 0.6em;
+}
+
+.badge.badge-new{
+    background-color: $desaturated-dark-cyan;
+
+    .badge-name::after{
+        content: '!';
+    }
+}
+
+.badge.badge-featured{
+    background-color: $very-dark-grayish-cyan;
+}
+
+
+@import './media';

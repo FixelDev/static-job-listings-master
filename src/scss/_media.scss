@@ -1,0 +1,65 @@
+@media (min-width:750px) {
+    .card{
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+    .card.job-card{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    header{
+        background: $desaturated-dark-cyan url('/public/images/bg-header-desktop.svg');
+    }
+
+    .job-card{
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1em;
+
+        .company-logo{
+            margin-right: 1em;
+            width: 5em;
+            transform: none;
+            position:relative;
+        }
+    
+        .job-card-content{
+            border:none;
+        }
+    
+        .job-card-content-header{
+
+    
+            .job-company{
+                margin-right: 0.8em;
+            }
+        }
+    
+        .job-position{
+           font-size: 1.2rem;
+           margin:0.5em 0;
+        }
+    
+        .job-card-info{
+            
+    
+            .job-card-info-element{
+                margin-right: 2em;
+            }
+
+        }
+    
+        .job-card-tags{
+            width: 100%;
+            justify-content: flex-end;
+            padding-right: 0;
+        }
+    }
+
+    .badge{
+        font-size: 0.8rem;
+        padding: 0.5em 0.5em 0.3em 0.6em;
+    }
+}

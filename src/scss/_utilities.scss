@@ -1,0 +1,27 @@
+.flex{
+    display: flex;
+}
+
+.content-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    padding: 0 2em;
+}
+
+.card{
+    padding: 1.2em;
+    border-radius: 0.4em;
+    box-shadow: 0px 18px 33px 1px rgba($desaturated-dark-cyan, 0.25);
+}
+
+.tag{
+    background-color: $light-grayish-cyan;
+    padding: 0.5em;
+    font-weight: 700;
+    color: $desaturated-dark-cyan;
+    border-radius: $tag-border-radius;
+    transition: 0.3s;
+}
