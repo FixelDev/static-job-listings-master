@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [http://FixelDev.github.io/static-job-listings-master]
+- Live Site URL: [https://github.com/FixelDev/static-job-listings-master]
 
 ## My process
 
